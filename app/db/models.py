@@ -35,7 +35,7 @@ class Deck(Base):
     cards = relationship("Card", back_populates="decks")
 
 
-class DeskCard(Base):
+class DeckCard(Base):
     __tablename__ = "deck_cards"
     id = Column(Integer, primary_key=True)
     deck_id = Column(Integer, ForeignKey("decks.id"))
