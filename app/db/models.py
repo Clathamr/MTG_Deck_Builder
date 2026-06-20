@@ -36,7 +36,7 @@ class Deck(Base):
 
 
 class DeskCard(Base):
-    __tablename__ = "desk_cards"
+    __tablename__ = "deck_cards"
     id = Column(Integer, primary_key=True)
     deck_id = Column(Integer, ForeignKey("decks.id"))
     card_name = Column(String, nullable=False)
