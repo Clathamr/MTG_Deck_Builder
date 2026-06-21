@@ -19,17 +19,22 @@ class MainWindow(QMainWindow):
 
         self.label = QLabel()
 
-        self.button = QPushButton("Fetch Card")
+        self.fetch_card_button = QPushButton("Fetch Card")
+        self.write_to_db_button = QPushButton("Add to 'My Cards'")
+        # self.sourced_card = QPushButton("Sourced Card")
 
         self.input = QLineEdit()
 
-        self.button.clicked.connect(self.on_fetch_card)
+        self.fetch_card_button.clicked.connect(self.on_fetch_card)
 
         layout = QVBoxLayout()
         layout.addWidget(self.input)
-        layout.addWidget(self.label)
-        layout.addWidget(self.button)
+        # layout.addWidget(self.label)
+        layout.addWidget(self.fetch_card_button)
+        layout.addWidget(self.write_to_db_button)
+        # layout.addWidget(self.sourced_card)
 
+        # sourced_card = QWidget()
         container = QWidget()
         container.setLayout(layout)
 
@@ -40,9 +45,9 @@ class MainWindow(QMainWindow):
         card = get_card_by_name(name)
 
         if card:
-            self.label.setText(card.name)
+            self.write_to_db_button.setText(f"Add: {card.name} to 'My Cards'")
         else:
-            self.label.setText("Card not found")
+            self.write_to_db_button.setText("Card not found")
 
 
 app = QApplication(sys.argv)
