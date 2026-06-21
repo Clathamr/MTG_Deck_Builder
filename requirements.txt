@@ -3,3 +3,4 @@ black==26.5.1
 ruff==0.15.18
 
 sqlalchemy==2.0.51
+mtgsdk==1.3.1

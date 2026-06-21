@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="802deb05-b759-407c-b5e3-c66613e66d30" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/app/db/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/db/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/services/mtg_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +36,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "desk-fix"
+    "git-widget-placeholder": "mtg-api"
   }
 }]]></component>
   <component name="SharedIndexes">
